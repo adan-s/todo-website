@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const controller = require('./controllers/todoController');
-
 const app = express();
 const port = 3000;
 
@@ -9,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'static')));
 app.use('/', require(path.join(__dirname, 'routes/todo.js')));
 
 
-// controller.createUser(4,'Hadia', 'hadia@example.com', 'password123', (err, results) => {
+// controller.createUser(6,'Sana', 'sana@example.com', 'password123', (err, results) => {
 //     if (err) {
 //         console.error('Error creating user:', err);
 //         return;
