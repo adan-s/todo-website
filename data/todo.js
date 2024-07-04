@@ -1,7 +1,0 @@
-todo = [
-    {
-
-    }
-];
-
-module.exports = todo;
