@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.static(path.join(__dirname, 'static')));
-app.use('/', require(path.join(__dirname, 'routes/todo.js')));
+app.use('/', require(path.join(__dirname, 'routes/todoRoutes.js')));
 
 
 // controller.createUser(6,'Sana', 'sana@example.com', 'password123', (err, results) => {
@@ -31,6 +31,15 @@ controller.getUsers((err, users) => {
       return;
   }
   console.log('Users:', users);
+});
+
+
+controller.getCategories((err, users) => {
+  if (err) {
+      console.error('Error getting categories:', err);
+      return;
+  }
+  console.log('Categories:', users);
 });
 
 

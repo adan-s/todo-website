@@ -1,7 +1,6 @@
 const express = require('express')
 const path = require('path')
 const router = express.Router()
-const todo = require('../data/todo')
 const { getTasks } = require('../controllers/todoController')
 
 router.get('/', (req, res) => {
